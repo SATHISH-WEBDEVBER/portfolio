@@ -1,0 +1,88 @@
+used to every components for translations
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../translations/translations";
+
+const { language } = useLanguage();
+const t = translations[language];
+
+For Example
+
+import React from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../translations/translations";
+
+const Navbar = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
+  return (
+    <nav>
+      <ul>
+        <li>{t.home}</li>
+        <li>{t.about}</li>
+        <li>{t.contact}</li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+
+///////////////////////////////////////////////////////////////////
+
+for different class name with styling
+
+const { language } = useLanguage();
+
+<div className={language === "en" ? "english-class" : "tamil-class"}>
+  {translations[language].greeting}
+</div>
+
+
+For Example
+
+import { useLanguage } from "./contexts/LanguageContext";
+import { translations } from "./translations/translations";
+import "./App.css";
+
+const App = () => {
+  const { language, toggleLanguage } = useLanguage();
+  const t = translations[language];
+
+  return (
+    <div className={`app-container ${language === "en" ? "english-style" : "tamil-style"}`}>
+      <button className="lang-btn" onClick={toggleLanguage}>
+        {language === "en" ? "தமிழ்" : "English"}
+      </button>
+
+      <h1>{t.greeting}</h1>    className={`nav-item ${language === "en" ? "nav-item-en" : "nav-item-ta"}`}
+    </div>
+  );
+};
+
+export default App;
+
+
+.english-style {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+.tamil-style {
+  font-family: "Noto Sans Tamil", serif;
+  text-align: right;
+}
+
+/* optional for top-right toggle */
+.lang-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

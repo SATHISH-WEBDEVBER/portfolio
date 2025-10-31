@@ -1,0 +1,64 @@
+.aboutmain {
+    margin: 100px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mainimage{
+    /* border-radius: 50% 50% 28% 72% / 45% 44% 56% 55% ; */
+    border-radius: 50%;
+    border: 1px solid #32cd32;
+    background-color: #32cd32;
+}
+
+.aboutcontent {
+    padding: 2rem;
+}
+
+.aboutcontent h1 {
+    color: #fff;
+    font-size: 2.8rem;
+}
+
+.aboutcontent h3 {
+    color: #32dc32;
+    margin: .5rem 0rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+
+}
+
+.aboutcontent p {
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    word-spacing: .1rem;
+    letter-spacing: .05rem;
+    line-height: 1.5rem;
+}
+
+.aboutbutton {
+    font-size: 1.2rem;
+    font-weight: 400;
+    background-color: #32dc32;
+    padding: 18px 26px;
+    border-radius: 22px;
+    cursor: pointer;
+    margin-top: 25px;
+    border: none;
+    box-shadow: 0 0 1rem #32cd32;
+    transition: .4s;
+    display: flex;
+    gap: 10px;
+}
+
+.aboutbutton:hover {
+    box-shadow: none;
+}
+
+.abouticon {
+    transform: rotate(40deg);
+}

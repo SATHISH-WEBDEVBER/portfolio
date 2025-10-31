@@ -1,0 +1,72 @@
+.header-call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 20px;
+  background-color: #32cd32;
+  color: #171f2b;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 1rem #32cd32;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+  min-width: 180px;
+  height: 50px;
+  transition: 0.5s;
+}
+
+.header-call-to-action:hover {
+  box-shadow: none;
+}
+
+.header-call-to-action span,
+.downloaddone {
+  font-size: 1.5rem;
+
+  font-family: "Winky Rough", sans-serif;
+}
+
+.success-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #171f2b;
+}
+
+.rocket-fly {
+  animation: flyRocket 1.3s ease forwards;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+@keyframes flyRocket {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+
+  100% {
+    left: 100%;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .header-call-to-action {
+    padding: 4px 8px;
+    font-size: 1rem;
+    min-width: 160px;
+    height: 45px;
+  }
+}

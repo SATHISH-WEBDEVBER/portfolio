@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #0f1724;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+}

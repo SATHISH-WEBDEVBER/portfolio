@@ -1,0 +1,46 @@
+.img-box {
+  position: relative;
+  width: 32vw;
+  height: 32vw;
+  background: linear-gradient(#171f2b, #32cd32);
+  border-radius: 50%;
+  border: 0.3rem solid #32cd32;
+  box-shadow: 0 0 2rem #32cd32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.img-box.home-img:hover {
+  box-shadow: 0 0 6rem #32cd32;
+}
+
+.img-box img {
+  position: absolute;
+  width: 85%;
+  top: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .img-box {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .img-box {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .img-box {
+    width: 55vw;
+    height: 55vw;
+  }
+}
