@@ -2,7 +2,7 @@ import React from "react";
 import "../css/ImageBox.css"; // replace with your actual CSS path
 
 
-import logo from "../assets/image/1.png";
+import logo from "../assets/image/2.jpeg";
 
 const ImageBox = () => {
   return (
