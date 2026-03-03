@@ -197,11 +197,11 @@ const Navbar = () => {
               {t.contact}
             </a>
           </li>
-          {/* <li className="lang-toggle" onClick={toggleLanguage}>
+          <li className="lang-toggle" onClick={toggleLanguage}>
             <span className="lang-btn">
               {language === "en" ? "தமிழ்" : "English"}
             </span>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </div>

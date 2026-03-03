@@ -19,8 +19,7 @@
 
 .img-box img {
   position: absolute;
-  width: 85%;
-  top: 2px;
+  width: 105%;
 }
 
 @media screen and (max-width: 768px) {

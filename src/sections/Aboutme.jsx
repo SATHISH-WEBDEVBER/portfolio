@@ -3,14 +3,14 @@ import { FaLocationArrow } from "react-icons/fa";
 
 import "../css/Aboutme.css";
 
-import logo from "../assets/image/image.png";
+import logo from "../assets/image/1.png";
 
 const Aboutme = () => {
   return (
     <section id="about">
       <div className=" aboutmain">
         <div className="aboutimage">
-          <img className="mainimage" src={logo} alt="" width={350} height={460}/>
+          <img className="mainimage" src={logo} alt=""/>
         </div>
         <div className="aboutcontent">
           <h1>About Me</h1>

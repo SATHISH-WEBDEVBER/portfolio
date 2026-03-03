@@ -40,6 +40,9 @@ const App = () => {
       <section id="home">
         <Home />
       </section>
+      {/* <section id="about">
+        <Aboutme />
+      </section> */}
       <section id="resume">
         <Resume />
       </section>
