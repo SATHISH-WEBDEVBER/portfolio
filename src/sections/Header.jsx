@@ -35,19 +35,19 @@ const Header = () => {
             </div>
             <div className="header-social-links-container">
               <span className="header-social-links">
-                <a href="">
+                <a href="https://github.com/SATHISH-WEBDEVBER" target="_blank" rel="noopener noreferrer">
                   <FaGithub className="social-icon" />
                   <p>Github</p>
                 </a>
               </span>
               <span className="header-social-links">
-                <a href="">
+                <a href="https://www.linkedin.com/in/sathishs07" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin className="social-icon" />
                   <p>LinkedIn</p>
                 </a>
               </span>
               <span className="header-social-links">
-                <a href="">
+                <a href="https://x.com/Sathish_MS1589" target="_blank" rel="noopener noreferrer">
                   <FaXTwitter className="social-icon" />
                   <p>Twitter</p>
                 </a>
