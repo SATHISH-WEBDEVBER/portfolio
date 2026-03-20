@@ -3,16 +3,19 @@ import { FaLocationArrow } from "react-icons/fa";
 
 import "../css/Aboutme.css";
 
-import logo from "../assets/image/1.png";
+import logo from "../assets/image/profile1.jpeg";
 
 const Aboutme = () => {
   return (
     <section id="about">
-      <div className=" aboutmain">
-        <div className="aboutimage">
-          <img className="mainimage" src={logo} alt=""/>
+      <div className="aboutmain">
+        {/* Image on the Left */}
+        <div className="aboutimage" data-aos="zoom-in-right">
+          <img className="mainimage" src={logo} alt="Profile" />
         </div>
-        <div className="aboutcontent">
+        
+        {/* Content on the Right */}
+        <div className="aboutcontent" data-aos="zoom-in-left">
           <h1>About Me</h1>
           <h3>Full Stack Developer</h3>
           <p>
@@ -26,7 +29,7 @@ const Aboutme = () => {
           <span>
             <button className="aboutbutton">
               <span>Contact Me</span>
-              <span class="abouticon">
+              <span className="abouticon">
                 <FaLocationArrow />
               </span>
             </button>
