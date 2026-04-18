@@ -156,3 +156,25 @@
         padding: 1rem;
     }
 }
+/* ===== RESUME SECTION ANIMATIONS ===== */
+.title {
+  background: linear-gradient(90deg, #fff 30%, #32cd32 50%, #fff 70%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmerText 4s linear infinite;
+}
+
+.tab-list {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.tab-list:hover {
+  transform: translateY(-3px);
+  color: rgba(50, 205, 50, 0.7);
+}
+
+.tab-list.active h3 {
+  animation: glowPulse 2.5s ease-in-out infinite;
+}

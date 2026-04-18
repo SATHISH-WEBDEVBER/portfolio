@@ -1,7 +1,7 @@
-import project1image from "../assets/image/work1.jpg"
-import project2image from "../assets/image/work2.jpg"
-import project3image from "../assets/image/work3.jpg"
-import project4image from "../assets/image/work4.jpg"
+import project1image from "../assets/image/11.png"
+import project2image from "../assets/image/12.png"
+import project3image from "../assets/image/13.png"
+import project4image from "../assets/image/14.png"
 import project5image from "../assets/image/work5.jpg"
 
 import { GiPaperWindmill } from "react-icons/gi";

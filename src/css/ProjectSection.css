@@ -164,3 +164,16 @@
         padding: 1rem;
     }
 }
+/* ===== PROJECT SECTION ANIMATIONS ===== */
+.tab-list-Portfolio {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.tab-list-Portfolio:hover {
+  transform: translateY(-3px);
+  color: rgba(50, 205, 50, 0.7);
+}
+
+.tab-list-Portfolio.active h3 {
+  animation: glowPulse 2.5s ease-in-out infinite;
+}

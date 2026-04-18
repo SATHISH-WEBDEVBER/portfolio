@@ -13,7 +13,13 @@ const Service = ({ data, isActive }) => {
       {data.map((item, index) => {
         const Icon = item.icon;
         return (
-          <div key={index} className="service-card">
+          <div
+            key={index}
+            className="service-card"
+            data-aos="fade-up"
+            data-aos-delay={index * 80}
+            data-aos-duration="600"
+          >
             <div className="service-icon">
               <Icon className="main-icon" />
               <FaArrowRight className="arrow-icon" />

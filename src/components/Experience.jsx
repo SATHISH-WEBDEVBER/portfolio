@@ -6,7 +6,12 @@ const Experience = ({ data, isActive }) => {
   return (
     <div className={`tab-grid resume-box experience ${isActive}`}>
       {data.map((item, index) => (
-        <div data-aos="zoom-in" key={index}>
+        <div
+          data-aos="fade-up"
+          data-aos-delay={index * 70}
+          data-aos-duration="600"
+          key={index}
+        >
           <div className="tab-item resume-item experience-item">
             <h4>{item.year}</h4>
             <h4>{item.role}</h4>

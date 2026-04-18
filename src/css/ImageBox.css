@@ -43,3 +43,33 @@
     height: 55vw;
   }
 }
+/* ===== FLOATING ANIMATION ===== */
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .img-box {
+  animation: floatUpDown 4s ease-in-out infinite, pulseGlow 3s ease-in-out infinite;
+} */
+
+.img-box::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px dashed rgba(50, 205, 50, 0.4);
+  animation: rotateSlowly 12s linear infinite;
+  pointer-events: none;
+}
+
+.img-box::after {
+  content: '';
+  position: absolute;
+  inset: -14px;
+  border-radius: 50%;
+  border: 1px dashed rgba(50, 205, 50, 0.2);
+  animation: rotateSlowly 20s linear infinite reverse;
+  pointer-events: none;
+}

@@ -1,34 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "../css/TypedHeader.css";
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../translations/translations";
 
 const TypedHeader = () => {
+  const typedRef = useRef(null);
+  const { language } = useLanguage();
+  const t = translations[language];
+
   useEffect(() => {
     const typed = new Typed("#typed-text", {
-      strings: [
-        "Frontend Developer",
-        "Junior Backend Developer",
-        "React Developer",
-        "Digital Marketer",
-        "IoT Enthusiast",
-        "NodeMCU Programmer",
-        "Embedded Systems Learner",
-      ],
+      strings: t.typedStrings,
       typeSpeed: 90,
       backSpeed: 40,
       backDelay: 2000,
       loop: true,
     });
-
-    // Cleanup on component unmount
+    typedRef.current = typed;
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, [language]);
 
   return (
     <h3 className="typed-header">
-      I Am
+      {language === "en" ? "I Am" : "நான்"}
       <span id="typed-text" className="typed-text"></span>
     </h3>
   );

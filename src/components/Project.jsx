@@ -17,7 +17,7 @@ const Project = ({ data, isActive }) => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    handleResize(); // on mount
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -33,6 +33,9 @@ const Project = ({ data, isActive }) => {
           key={index}
           className="project-box"
           onClick={() => isMobile && toggleContent(index)}
+          data-aos="zoom-in-up"
+          data-aos-delay={index * 90}
+          data-aos-duration="700"
         >
           <img
             className="project-image"

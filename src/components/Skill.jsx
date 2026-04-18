@@ -6,7 +6,13 @@ const Skill = ({ data, isActive }) => {
   return (
     <div className={`tab-grid resume-box skills ${isActive}`}>
       {data.map((item, index) => (
-        <div className="tab-item resume-item skills-item" key={index}>
+        <div
+          className="tab-item resume-item skills-item"
+          key={index}
+          data-aos="zoom-in"
+          data-aos-delay={index * 50}
+          data-aos-duration="500"
+        >
           <div className="item-icon">
             <item.icon className="item-icons" />
           </div>

@@ -81,3 +81,48 @@ textarea {
   color: white;
   font-weight: bold;
 }
+/* ===== CONTACT ANIMATIONS ===== */
+.contact-title {
+  background: linear-gradient(90deg, #fff 30%, #32cd32 50%, #fff 70%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmerText 4s linear infinite;
+}
+
+input, textarea {
+  transition: border 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  border: 1px solid transparent;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #32cd32;
+  box-shadow: 0 0 12px rgba(50, 205, 50, 0.3);
+  transform: translateY(-2px);
+}
+
+.send-button {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.send-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.25) 50%, transparent 60%);
+  background-size: 200% 200%;
+  transition: background-position 0.5s ease;
+}
+
+.send-button:hover::after {
+  background-position: 200% center;
+}
+
+.send-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 240, 255, 0.6);
+}

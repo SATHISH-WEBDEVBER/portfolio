@@ -1,38 +1,36 @@
 import React from "react";
 import { FaLocationArrow } from "react-icons/fa";
-
 import "../css/Aboutme.css";
-
-import logo from "../assets/image/profile1.jpeg";
+import logo from "../assets/image/profile3.jpeg";
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../translations/translations";
 
 const Aboutme = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <section id="about">
       <div className="aboutmain">
         {/* Image on the Left */}
-        <div className="aboutimage" data-aos="zoom-in-right">
+        <div className="aboutimage" data-aos="zoom-in-right" data-aos-duration="800">
           <img className="mainimage" src={logo} alt="Profile" />
         </div>
-        
+
         {/* Content on the Right */}
-        <div className="aboutcontent" data-aos="zoom-in-left">
-          <h1>About Me</h1>
-          <h3>Full Stack Developer</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perferendis, adipisci. Iusto nostrum saepe totam delectus tempora
-            dicta exercitationem eos repellat deserunt sunt fugiat suscipit, quo
-            quod ipsum soluta beatae reiciendis provident aperiam eligendi odit?
-            Cupiditate aspernatur, eveniet ex minima fugit modi corporis enim
-            tempore rem ipsam veritatis sint delectus facilis.
-          </p>
+        <div className="aboutcontent" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="150">
+          <h1>{t.aboutTitle}</h1>
+          <h3>{t.aboutRole}</h3>
+          <p>{t.aboutDescription}</p>
           <span>
-            <button className="aboutbutton">
-              <span>Contact Me</span>
-              <span className="abouticon">
-                <FaLocationArrow />
-              </span>
-            </button>
+            <a href="#contact">
+              <button className="aboutbutton">
+                <span>{t.aboutButton}</span>
+                <span className="abouticon">
+                  <FaLocationArrow />
+                </span>
+              </button>
+            </a>
           </span>
         </div>
       </div>

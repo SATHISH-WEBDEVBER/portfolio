@@ -41,3 +41,37 @@
   font-weight: 500;
   color: #ffffff;
 }
+
+/* ===== SKILL CARD ANIMATIONS ===== */
+.skills-item {
+  animation: cardEntrance 0.5s ease-out both;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.skills-item:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow: 0 10px 25px rgba(50, 205, 50, 0.25);
+}
+
+.skills-item .item-icons {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease;
+}
+
+.skills-item:hover .item-icons {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* Stagger skill items */
+.resume-box.skills .skills-item:nth-child(1)  { animation-delay: 0.03s; }
+.resume-box.skills .skills-item:nth-child(2)  { animation-delay: 0.07s; }
+.resume-box.skills .skills-item:nth-child(3)  { animation-delay: 0.10s; }
+.resume-box.skills .skills-item:nth-child(4)  { animation-delay: 0.13s; }
+.resume-box.skills .skills-item:nth-child(5)  { animation-delay: 0.16s; }
+.resume-box.skills .skills-item:nth-child(6)  { animation-delay: 0.19s; }
+.resume-box.skills .skills-item:nth-child(7)  { animation-delay: 0.22s; }
+.resume-box.skills .skills-item:nth-child(8)  { animation-delay: 0.25s; }
+.resume-box.skills .skills-item:nth-child(9)  { animation-delay: 0.28s; }
+.resume-box.skills .skills-item:nth-child(10) { animation-delay: 0.31s; }
+.resume-box.skills .skills-item:nth-child(11) { animation-delay: 0.34s; }
+.resume-box.skills .skills-item:nth-child(12) { animation-delay: 0.37s; }
