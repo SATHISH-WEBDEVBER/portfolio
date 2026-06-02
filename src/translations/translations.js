@@ -79,7 +79,7 @@ export const translations = {
 
     // contact section
     contactTitle: "Contact",
-    contactSubtitle: "Let's Work Together",
+    contactSubtitle: "Let Work Together",
     contactFullName: "Full Name",
     contactEmail: "Email Address",
     contactPhone: "Phone Number",
