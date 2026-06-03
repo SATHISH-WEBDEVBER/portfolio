@@ -14,7 +14,7 @@ export const translations = {
     headerName: "Sathish S",
     headerDescription:
       "I'm a passionate Full Stack Developer skilled in NodeMCU-based IoT projects, MERN Stack, and Responsive Web Design. I enjoy building real-time, user-friendly applications using modern technologies. I'm also exploring AI integration and love turning innovative ideas into working products.",
-    headerDownload: "Download CV",
+    headerDownload: "Download Resume",
     headerDownloaded: "Downloaded",
 
     // typed strings
@@ -61,22 +61,17 @@ export const translations = {
       "Seamlessly connecting third-party services and APIs to enhance app functionality and deliver richer user experiences.",
 
     // project items
-    portfolioName: "Sathish Portfolio",
-    portfolioContent:
-      "A personal portfolio website built with React, featuring smooth animations, multilanguage support, and a clean modern design.",
-    ecommerceName: "E-commerce App",
-    ecommerceContent:
-      "A full-featured e-commerce application with cart management, payment integration, and an admin dashboard.",
-    blogName: "Blog Website",
-    blogContent:
-      "A dynamic blog platform with a Markdown editor, comments system, and category-based filtering.",
-    weatherName: "Weather App",
-    weatherContent:
-      "A real-time weather forecast app using the OpenWeather API with location detection and animated weather icons.",
-    todoName: "Todo App",
-    todoContent:
-      "A simple yet powerful todo application to track tasks with priority levels and persistent local storage.",
+    knowledgeName: "Knowledge to Intelligence Platform",
+    knowledgeContent:
+      "A modern knowledge-sharing platform with secure user authentication, content management, and role-based access control for structured learning resources.",
 
+    yuvasName: "Yuva's Pet Care",
+    yuvasContent:
+      "A comprehensive pet healthcare platform connecting pet owners with veterinarians through online consultations, appointment booking, and disease information resources.",
+
+    contactName: "Contact Management App",
+    contactContent:
+      "A contact management application that allows users to securely store, organize, and manage personal and professional contact information with detailed records.",
     // contact section
     contactTitle: "Contact",
     contactSubtitle: "Let's Work Together",

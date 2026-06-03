@@ -1,8 +1,8 @@
-import project1image from "../assets/image/11.png"
-import project2image from "../assets/image/12.png"
-import project3image from "../assets/image/13.png"
-import project4image from "../assets/image/14.png"
-import project5image from "../assets/image/work5.jpg"
+import project1image from "../assets/image/KnowledgeToIntelligenceSC.png"
+import project2image from "../assets/image/YuvaPetCareSc.png"
+import project3image from "../assets/image/NexLinK2ISC.png"
+
+
 
 import { GiPaperWindmill } from "react-icons/gi";
 
@@ -11,43 +11,27 @@ import { GiPaperWindmill } from "react-icons/gi";
 export const projectData = [
    {
     projectimage: project1image,
-    nameKey: "portfolioName",
-    contentKey: "portfolioContent",
-    tech: "React, Tailwind, Framer Motion",
-    github: "https://github.com/sathish/portfolio",
-    demo: "https://sathish-portfolio.vercel.app"
+    nameKey: "knowledgeName",
+    contentKey: "knowledgeContent",
+    tech: "React.js, Node.js, MongoDB, Express.js,",
+    github: "https://github.com/SATHISH-WEBDEVBER/Information_Portf/blob/main/README.md",
+    demo: "https://knowledge-to-intelligence.vercel.app/"
   },
   {
     projectimage: project2image,
-    nameKey: "ecommerceName",
-    contentKey: "ecommerceContent",
-    tech: "MERN Stack",
-    github: "https://github.com/sathish/ecommerce",
-    demo: "https://sathish-shop.vercel.app"
+    nameKey: "yuvasName",
+    contentKey: "yuvasContent",
+    tech: "Next.js, Tailwind, MongoDB",
+    github: "https://github.com/SATHISH-WEBDEVBER/Information_Portf/blob/main/README.md",
+    demo: "https://www.yuvaspetcare.in/"
   },
   {
     projectimage: project3image,
-    nameKey: "blogName",
-    contentKey: "blogContent",
-    tech: "React, Node.js, MongoDB",
-    github: "https://github.com/sathish/blog-app",
-    demo: "https://sathish-blogs.netlify.app"
-  },
-  {
-    projectimage: project4image,
-    nameKey: "weatherName",
-    contentKey: "weatherContent",
-    tech: "HTML, CSS, JavaScript",
-    github: "https://github.com/sathish/weather-app",
-    demo: "https://weatherbysathish.netlify.app"
-  },
-  {
-    projectimage: project5image,
-    nameKey: "todoName",
-    contentKey: "todoContent",
-    tech: "React + LocalStorage",
-    github: "https://github.com/sathish/todo-app",
-    demo: "https://todo-sathish.netlify.app"
+    nameKey: "contactName",
+    contentKey: "contactContent",
+    tech: "React.js, Node.js, MongoDB, Express.js, JWT ",
+    github: "https://github.com/SATHISH-WEBDEVBER/Information_Portf/blob/main/README.md",
+    demo: "https://contact-management-hub-psi.vercel.app/"
   }
 ];
 

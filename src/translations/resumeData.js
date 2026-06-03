@@ -15,49 +15,27 @@ import {
 import { FaGitAlt } from "react-icons/fa";
 
 export const experienceData = [
-{
-    year: "2023 - 2024",
-    role: "Data Analyst Intern",
-    place: "GTD Company",
+  {
+    year: "2025 - Present",
+    role: "Co-Founder ",
+    place: "Knowledge To Intelligence",
     description:
-      "I worked at GTD for 5 months, performing data analysis for a U.S. client and gained real-time reporting experience.",
+      "Co-founded and developed a knowledge-sharing platform, building scalable web applications, managing backend systems, and enhancing overall user experience.",
   },
   {
-    year: "2023 - 2024",
-    role: "Data Analyst Intern",
-    place: "GTD Company",
+    year: "12/2025 - 03/2026",
+    role: "Software Developer Intern",
+    place: "Crescent Infotech",
     description:
-      "I worked at GTD for 5 months, performing data analysis for a U.S. client and gained real-time reporting experience.",
+      "Developed responsive web applications using React.js, integrated backend APIs, collaborated within Agile teams, and contributed to feature development and testing processes.",
   },
   {
-    year: "2023 - 2024",
-    role: "Data Analyst Intern",
-    place: "GTD Company",
+    year: "12/2025 - 03/2026",
+    role: "Software Developer Intern",
+    place: "VELGA",
     description:
-      "I worked at GTD for 5 months, performing data analysis for a U.S. client and gained real-time reporting experience.",
+      "Contributed to frontend and backend development, implemented application features, collaborated with team members, and supported delivery of business-focused solutions.",
   },
-  {
-    year: "2023 - 2024",
-    role: "Data Analyst Intern",
-    place: "GTD Company",
-    description:
-      "I worked at GTD for 5 months, performing data analysis for a U.S. client and gained real-time reporting experience.",
-  },
-  {
-    year: "2023 - 2024",
-    role: "Data Analyst Intern",
-    place: "GTD Company",
-    description:
-      "I worked at GTD for 5 months, performing data analysis for a U.S. client and gained real-time reporting experience.",
-  },
-  {
-    year: "2023 - 2024",
-    role: "Data Analyst Intern",
-    place: "GTD Company",
-    description:
-      "I worked at GTD for 5 months, performing data analysis for a U.S. client and gained real-time reporting experience.",
-  },
-
 ];
 
 export const skillsData = [
@@ -76,46 +54,32 @@ export const skillsData = [
 ];
 
 export const educationData = [
-{
-    year: "2024",
-    course: "Frontend Development",
-    platform: "Self-Learning – YouTube",
+  {
+    year: "2022 - 2026",
+    course: "B.Tech Information Technology",
+    platform: "SSM College of Engineering",
     description:
-      "Learned HTML, CSS, JS, React, Bootstrap, and Tailwind CSS. Built responsive websites.",
+      "Studied software development, databases, networking, and programming concepts while completing academic projects and technical coursework successfully.",
   },
   {
-    year: "2024",
-    course: "Frontend Development",
-    platform: "Self-Learning – YouTube",
+    year: "2020 - 2022",
+    course: "Higher Secondary Education",
+    platform: "Govt Boys Hr. Sec. School",
     description:
-      "Learned HTML, CSS, JS, React, Bootstrap, and Tailwind CSS. Built responsive websites.",
+      "Studied computer science fundamentals, mathematics, and analytical concepts while developing strong problem-solving and learning abilities.",
   },
   {
-    year: "2024",
-    course: "Frontend Development",
-    platform: "Self-Learning – YouTube",
+    year: "12/2025 - 03/2026",
+    course: "Full Stack Development Internship",
+    platform: "Crescent Infotech",
     description:
-      "Learned HTML, CSS, JS, React, Bootstrap, and Tailwind CSS. Built responsive websites.",
+      "Learned full stack development, API integration, frontend design, and backend implementation while contributing to real projects.",
   },
   {
-    year: "2024",
-    course: "Frontend Development",
-    platform: "Self-Learning – YouTube",
+    year: "12/2025 - 03/2026",
+    course: "Frontend Development Internship",
+    platform: "VELGA",
     description:
-      "Learned HTML, CSS, JS, React, Bootstrap, and Tailwind CSS. Built responsive websites.",
-  },
-  {
-    year: "2024",
-    course: "Frontend Development",
-    platform: "Self-Learning – YouTube",
-    description:
-      "Learned HTML, CSS, JS, React, Bootstrap, and Tailwind CSS. Built responsive websites.",
-  },
-  {
-    year: "2024",
-    course: "Frontend Development",
-    platform: "Self-Learning – YouTube",
-    description:
-      "Learned HTML, CSS, JS, React, Bootstrap, and Tailwind CSS. Built responsive websites.",
+      "Learned frontend development, responsive design, component architecture, and user interface implementation while contributing to projects.",
   },
 ];
