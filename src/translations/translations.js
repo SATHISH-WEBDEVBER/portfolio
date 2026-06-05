@@ -22,10 +22,11 @@ export const translations = {
       "Frontend Developer",
       "Junior Backend Developer",
       "React Developer",
-      "Digital Marketer",
-      "IoT Enthusiast",
-      "NodeMCU Programmer",
-      "Embedded Systems Learner",
+      "Full Stack Developer",
+      // "Digital Marketer",
+      // "IoT Enthusiast",
+      // "NodeMCU Programmer",
+      // "Embedded Systems Learner",
     ],
 
     // about section
