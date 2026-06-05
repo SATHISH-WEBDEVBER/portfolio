@@ -30,7 +30,7 @@ export const experienceData = [
       "Developed responsive web applications using React.js, integrated backend APIs, collaborated within Agile teams, and contributed to feature development and testing processes.",
   },
   {
-    year: "12/2025 - 03/2026",
+    year: "07/2025 - 07/2025",
     role: "Software Developer Intern",
     place: "VELGA",
     description:
@@ -50,7 +50,7 @@ export const skillsData = [
   { icon: BiLogoPython, name: "Python" },
   { icon: BiLogoMongodb, name: "MongoDB" },
   { icon: BiLogoGithub, name: "GitHub" },
-  { icon: BiLogoFigma, name: "Figma" },
+  // { icon: BiLogoFigma, name: "Figma" },
 ];
 
 export const educationData = [
@@ -76,7 +76,7 @@ export const educationData = [
       "Learned full stack development, API integration, frontend design, and backend implementation while contributing to real projects.",
   },
   {
-    year: "12/2025 - 03/2026",
+    year: "07/2025 - 07/2025",
     course: "Frontend Development Internship",
     platform: "VELGA",
     description:

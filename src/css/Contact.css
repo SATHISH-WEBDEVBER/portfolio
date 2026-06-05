@@ -17,7 +17,7 @@
 .contact-subtitle {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #00f0ff;
+  color: #32cd32;
   margin-bottom: 2.5rem;
 }
 
@@ -53,25 +53,25 @@ textarea {
 
 /* Button styling */
 .send-button {
-  background-color: #00f0ff;
+  background-color: #32cd32;
   color: #000;
   font-weight: 600;
   font-size: 1rem;
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
-  box-shadow: 0 0 15px #00f0ff;
+  box-shadow: 0 0 15px #32cd32;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .send-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px #00f0ff;
+  box-shadow: 0 0 25px #32cd32;
 }
 
 .Toastify__toast--success {
-  background-color: #1e90ff;
+  background-color: #32cd32;
   color: white;
   font-weight: bold;
 }
@@ -124,5 +124,4 @@ input:focus, textarea:focus {
 
 .send-button:hover {
   transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 8px 30px rgba(0, 240, 255, 0.6);
 }
