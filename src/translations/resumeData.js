@@ -16,11 +16,11 @@ import { FaGitAlt } from "react-icons/fa";
 
 export const experienceData = [
   {
-    year: "2025 - Present",
-    role: "Co-Founder ",
-    place: "Knowledge To Intelligence",
+    year: "2026 - Present",
+    role: "Chief Technology Officer (CTO)",
+    place: "KnowledgeToIntelligence",
     description:
-      "Co-founded and developed a knowledge-sharing platform, building scalable web applications, managing backend systems, and enhancing overall user experience.",
+      "Chief Technology Officer and developed a knowledge-sharing platform, building scalable web applications, managing backend systems, and enhancing overall user experience.",
   },
   {
     year: "12/2025 - 03/2026",
@@ -54,6 +54,13 @@ export const skillsData = [
 ];
 
 export const educationData = [
+  {
+    year: "2026 - 2028 (Present)",
+    course: "ME - Computer Science and Engineering",
+    platform: "JKKN College of Engineering and Technology",
+    description:
+      "Currently pursuing advanced studies in Computer Science and Engineering with a focus on research, advanced computing concepts, software engineering, artificial intelligence, and emerging technologies.",
+  },
   {
     year: "2022 - 2026",
     course: "B.Tech Information Technology",
