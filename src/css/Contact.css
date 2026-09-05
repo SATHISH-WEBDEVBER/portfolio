@@ -94,7 +94,7 @@ textarea {
 }
 /* ===== CONTACT ANIMATIONS ===== */
 .contact-title {
-  background: linear-gradient(90deg, #fff 30%, #32cd32 50%, #fff 70%);
+  background: linear-gradient(90deg, var(--text-primary) 30%, var(--accent-color) 50%, var(--text-primary) 70%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
