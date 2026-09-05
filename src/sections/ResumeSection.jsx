@@ -16,12 +16,12 @@ const ResumeSection = () => {
 
   return (
     <section className="section resume" id="resume">
-      <h2 className="title" data-aos="fade-up" data-aos-duration="700">
+      <h2 className="title" data-aos="fade-right" data-aos-duration="700">
         {t.resumeTitle}
       </h2>
 
       {/* Tab Navigation */}
-      <div className="tab-box" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+      <div className="tab-box" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
         <div
           className={`tab-list resume-list ${isActive("experience")}`}
           onClick={() => setActiveTab("experience")}

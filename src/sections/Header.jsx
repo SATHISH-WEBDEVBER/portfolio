@@ -74,7 +74,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+        <div data-aos="fade-right" data-aos-duration="900" data-aos-delay="200">
           <ImageBox />
         </div>
       </div>

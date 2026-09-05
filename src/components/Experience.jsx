@@ -7,7 +7,7 @@ const Experience = ({ data, isActive }) => {
     <div className={`tab-grid resume-box experience ${isActive}`}>
       {data.map((item, index) => (
         <div
-          data-aos="fade-up"
+          data-aos="fade-right"
           data-aos-delay={index * 70}
           data-aos-duration="600"
           key={index}

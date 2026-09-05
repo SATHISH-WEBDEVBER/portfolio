@@ -13,12 +13,12 @@ const Aboutme = () => {
     <section id="about">
       <div className="aboutmain">
         {/* Image on the Left */}
-        <div className="aboutimage" data-aos="zoom-in-right" data-aos-duration="800">
+        <div className="aboutimage" data-aos="fade-right" data-aos-duration="800">
           <img className="mainimage" src={logo} alt="Profile" />
         </div>
 
         {/* Content on the Right */}
-        <div className="aboutcontent" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="150">
+        <div className="aboutcontent" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
           <h1>{t.aboutTitle}</h1>
           <h3>{t.aboutRole}</h3>
           <p>{t.aboutDescription}</p>

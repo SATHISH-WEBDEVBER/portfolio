@@ -6,16 +6,17 @@ export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
   const getInitialTheme = () => {
-    const savedTheme = localStorage.getItem("appTheme");
+    // Check sessionStorage (retained on refresh, reset on new tab/window open)
+    const savedTheme = sessionStorage.getItem("appTheme");
     if (savedTheme) return savedTheme;
-    return "dark"; // Default to dark mode
+    return "dark"; // Default to dark mode on new site openings
   };
 
   const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("appTheme", theme);
+    sessionStorage.setItem("appTheme", theme);
   }, [theme]);
 
   const toggleTheme = () => {

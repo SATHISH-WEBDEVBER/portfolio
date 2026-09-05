@@ -9,7 +9,7 @@ const Education = ({ data, isActive }) => {
         <div
           className="tab-item resume-item education-item"
           key={index}
-          data-aos="fade-up"
+          data-aos="fade-right"
           data-aos-delay={index * 70}
           data-aos-duration="600"
         >

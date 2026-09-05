@@ -45,14 +45,14 @@ const Contact = () => {
     <section className="contact-section" id="contact">
       <h1
         className="contact-title"
-        data-aos="fade-up"
+        data-aos="fade-right"
         data-aos-duration="700"
       >
         {t.contactTitle}
       </h1>
       <h2
         className="contact-subtitle"
-        data-aos="fade-up"
+        data-aos="fade-right"
         data-aos-duration="700"
         data-aos-delay="100"
       >
@@ -63,7 +63,7 @@ const Contact = () => {
         ref={form}
         onSubmit={sendEmail}
         className="contact-form"
-        data-aos="fade-up"
+        data-aos="fade-right"
         data-aos-duration="800"
         data-aos-delay="200"
       >

@@ -33,7 +33,7 @@ const Project = ({ data, isActive }) => {
           key={index}
           className="project-box"
           onClick={() => isMobile && toggleContent(index)}
-          data-aos="zoom-in-up"
+          data-aos="fade-right"
           data-aos-delay={index * 90}
           data-aos-duration="700"
         >

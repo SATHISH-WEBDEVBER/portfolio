@@ -16,7 +16,7 @@ const Service = ({ data, isActive }) => {
           <div
             key={index}
             className="service-card"
-            data-aos="fade-up"
+            data-aos="fade-right"
             data-aos-delay={index * 80}
             data-aos-duration="600"
           >

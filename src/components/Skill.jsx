@@ -9,7 +9,7 @@ const Skill = ({ data, isActive }) => {
         <div
           className="tab-item resume-item skills-item"
           key={index}
-          data-aos="zoom-in"
+          data-aos="fade-right"
           data-aos-delay={index * 50}
           data-aos-duration="500"
         >

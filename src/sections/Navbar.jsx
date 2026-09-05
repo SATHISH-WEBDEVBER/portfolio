@@ -23,6 +23,23 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const navbarHeight = 69;
+      const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   // ✅ Handle window resize
   useEffect(() => {
     const handleResize = () => {
@@ -117,9 +134,9 @@ const Navbar = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <a href="">
+      <a href="#home" onClick={(e) => handleNavClick(e, "home")}>
         <div className="navbar-start">
-          <img src={logo} alt="Logo" className="navbar-logo" />
+          <img src={logo} alt="Logo" className="navbar-logo" id="main-navbar-logo" />
           <h1
             className={`navbar-title ${
               language === "en" ? "navbar-title-en" : "navbar-title-ta"
@@ -143,7 +160,7 @@ const Navbar = () => {
               className={`nav-item ${
                 language === "en" ? "nav-item-en" : "nav-item-ta"
               }`}
-              onClick={toggleMenu}
+              onClick={(e) => handleNavClick(e, "home")}
             >
               {t.home}
             </a>
@@ -154,7 +171,7 @@ const Navbar = () => {
               className={`nav-item ${
                 language === "en" ? "nav-item-en" : "nav-item-ta"
               }`}
-              onClick={toggleMenu}
+              onClick={(e) => handleNavClick(e, "about")}
             >
               {t.about}
             </a>
@@ -165,7 +182,7 @@ const Navbar = () => {
               className={`nav-item ${
                 language === "en" ? "nav-item-en" : "nav-item-ta"
               }`}
-              onClick={toggleMenu}
+              onClick={(e) => handleNavClick(e, "resume")}
             >
               {t.resume}
             </a>
@@ -176,7 +193,7 @@ const Navbar = () => {
               className={`nav-item ${
                 language === "en" ? "nav-item-en" : "nav-item-ta"
               }`}
-              onClick={toggleMenu}
+              onClick={(e) => handleNavClick(e, "projects")}
             >
               {t.projects}
             </a>
@@ -187,7 +204,7 @@ const Navbar = () => {
               className={`nav-item ${
                 language === "en" ? "nav-item-en" : "nav-item-ta"
               }`}
-              onClick={toggleMenu}
+              onClick={(e) => handleNavClick(e, "contact")}
             >
               {t.contact}
             </a>
