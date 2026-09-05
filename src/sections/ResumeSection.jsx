@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AOS from "aos";
 import "../css/ResumeSection.css";
 import { experienceData, skillsData, educationData } from "../translations/resumeData.js";
 import Experience from "../components/Experience.jsx";
@@ -14,29 +15,45 @@ const ResumeSection = () => {
   const { language } = useLanguage();
   const t = translations[language];
 
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    setTimeout(() => {
+      const activeElements = document.querySelectorAll(".resume-box.active [data-aos]");
+      activeElements.forEach((el) => {
+        el.classList.remove("aos-animate");
+      });
+      setTimeout(() => {
+        activeElements.forEach((el) => {
+          el.classList.add("aos-animate");
+        });
+        AOS.refreshHard();
+      }, 50);
+    }, 50);
+  };
+
   return (
     <section className="section resume" id="resume">
-      <h2 className="title" data-aos="fade-right" data-aos-duration="700">
+      <h2 className="title" data-aos="fade-down" data-aos-duration="700">
         {t.resumeTitle}
       </h2>
 
       {/* Tab Navigation */}
-      <div className="tab-box" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
+      <div className="tab-box" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
         <div
           className={`tab-list resume-list ${isActive("experience")}`}
-          onClick={() => setActiveTab("experience")}
+          onClick={() => handleTabChange("experience")}
         >
           <h3>{t.resumeExperience}</h3>
         </div>
         <div
           className={`tab-list resume-list ${isActive("skills")}`}
-          onClick={() => setActiveTab("skills")}
+          onClick={() => handleTabChange("skills")}
         >
           <h3>{t.resumeSkill}</h3>
         </div>
         <div
           className={`tab-list resume-list ${isActive("education")}`}
-          onClick={() => setActiveTab("education")}
+          onClick={() => handleTabChange("education")}
         >
           <h3>{t.resumeEducation}</h3>
         </div>

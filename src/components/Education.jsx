@@ -10,7 +10,7 @@ const Education = ({ data, isActive }) => {
           className="tab-item resume-item education-item"
           key={index}
           data-aos="fade-right"
-          data-aos-delay={index * 70}
+          data-aos-delay={index * 100}
           data-aos-duration="600"
         >
           <h4>{item.year}</h4>

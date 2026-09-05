@@ -33,8 +33,8 @@ const Project = ({ data, isActive }) => {
           key={index}
           className="project-box"
           onClick={() => isMobile && toggleContent(index)}
-          data-aos="fade-right"
-          data-aos-delay={index * 90}
+          data-aos="zoom-in-up"
+          data-aos-delay={index * 120}
           data-aos-duration="700"
         >
           <img

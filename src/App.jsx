@@ -22,9 +22,10 @@ const App = () => {
     setTimeout(() => {
       AOS.init({
         duration: 900,
-        once: true,
+        once: false,
+        mirror: true,
         easing: "ease-in-out",
-        offset: 50,
+        offset: 60,
       });
       AOS.refreshHard();
     }, 100);

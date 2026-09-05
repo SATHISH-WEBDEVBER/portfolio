@@ -9,8 +9,8 @@ const Skill = ({ data, isActive }) => {
         <div
           className="tab-item resume-item skills-item"
           key={index}
-          data-aos="fade-right"
-          data-aos-delay={index * 50}
+          data-aos="zoom-in"
+          data-aos-delay={index * 60}
           data-aos-duration="500"
         >
           <div className="item-icon">

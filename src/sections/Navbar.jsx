@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import AOS from "aos";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useTheme } from "../contexts/ThemeContext";
 import { translations } from "../translations/translations";
@@ -29,6 +30,12 @@ const Navbar = () => {
 
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
+      // Clear aos-animate on target section elements so they animate fresh every time
+      const aosElements = targetElement.querySelectorAll("[data-aos]");
+      aosElements.forEach((el) => {
+        el.classList.remove("aos-animate");
+      });
+
       const navbarHeight = 69;
       const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - navbarHeight;
@@ -37,6 +44,21 @@ const Navbar = () => {
         top: offsetPosition,
         behavior: "smooth"
       });
+
+      // Re-trigger AOS entrance animation as section is arrived at
+      setTimeout(() => {
+        aosElements.forEach((el) => {
+          el.classList.add("aos-animate");
+        });
+        AOS.refreshHard();
+      }, 200);
+
+      setTimeout(() => {
+        aosElements.forEach((el) => {
+          el.classList.add("aos-animate");
+        });
+        AOS.refresh();
+      }, 550);
     }
   };
 
