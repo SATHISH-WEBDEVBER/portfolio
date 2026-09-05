@@ -12,8 +12,10 @@ export const translations = {
     // header section
     headerGreeting: "Hello It's Me",
     headerName: "Sathish S",
+    headerCeo: "CEO at",
+    headerCompany: "KnowledgetoIntelligence",
     headerDescription:
-      "I'm a passionate Full Stack Developer skilled in NodeMCU-based IoT projects, MERN Stack, and Responsive Web Design. I enjoy building real-time, user-friendly applications using modern technologies. I'm also exploring AI integration and love turning innovative ideas into working products.",
+      "I lead KnowledgeToIntelligence, where I focus on product development, technology strategy, and turning innovative ideas into meaningful digital solutions. With experience in full-stack web development and Java, I enjoy building technology that solves real-world problems. I’m passionate about continuous learning, innovation, and creating impactful digital products.",
     headerDownload: "Download Resume",
     headerDownloaded: "Downloaded",
 
@@ -31,9 +33,9 @@ export const translations = {
 
     // about section
     aboutTitle: "About Me",
-    aboutRole: "Full Stack Developer",
+    aboutRole: "CEO & Technology Enthusiast",
     aboutDescription:
-      "I'm a passionate Full Stack Developer with expertise in building scalable web applications. I specialize in the MERN stack and love crafting intuitive user experiences. With hands-on experience in IoT and embedded systems, I bridge the gap between hardware and software. I'm always eager to learn new technologies and build impactful products.",
+      "As the CEO of KnowledgeToIntelligence, I focus on building innovative digital products and driving technology initiatives. With expertise in full-stack development and Java, I combine technical knowledge with a product-focused mindset to turn ideas into practical solutions. I’m driven by innovation, continuous learning, and the desire to create meaningful impact through technology.",
     aboutButton: "Contact Me",
 
     // resume section
@@ -98,6 +100,8 @@ export const translations = {
     // header section
     headerGreeting: "வணக்கம், நான்",
     headerName: "சதீஷ் S",
+    headerCeo: "CEO at",
+    headerCompany: "KnowledgetoIntelligence",
     headerDescription:
       "நான் ஒரு முழு-ஸ்டாக் டெவலப்பர். NodeMCU IoT திட்டங்கள், MERN ஸ்டாக் மற்றும் ரெஸ்பான்சிவ் வெப் டிசைன் ஆகியவற்றில் திறன் பெற்றவன். நவீன தொழில்நுட்பங்களைப் பயன்படுத்தி பயனர் நட்பான பயன்பாடுகளை உருவாக்குவதில் மகிழ்ச்சி அடைகிறேன்.",
     headerDownload: "CV பதிவிறக்கு",
@@ -116,9 +120,9 @@ export const translations = {
 
     // about section
     aboutTitle: "என்னை பற்றி",
-    aboutRole: "முழு-ஸ்டாக் டெவலப்பர்",
+    aboutRole: "CEO & Technology Enthusiast",
     aboutDescription:
-      "நான் ஒரு முழு-ஸ்டாக் டெவலப்பர், அளவிடக்கூடிய வலை பயன்பாடுகளை உருவாக்குவதில் நிபுணத்துவம் பெற்றவன். MERN ஸ்டாக்கில் நிபுணத்துவம் மற்றும் IoT அமைப்புகளில் அனுபவம் உடையவன். புதிய தொழில்நுட்பங்களை கற்பதில் ஆர்வமாக இருக்கிறேன்.",
+      "KnowledgeToIntelligence-ன் CEO ஆக, நான் புதுமையான டிஜிட்டல் தயாரிப்புகளை உருவாக்குவதிலும் தொழில்நுட்ப முயற்சிகளை இயக்குவதிலும் கவனம் செலுத்துகிறேன். Full-Stack மேம்பாடு மற்றும் Java-வில் அனுபவத்துடன், யோசனைகளை நடைமுறை தீர்வுகளாக மாற்றுகிறேன்.",
     aboutButton: "தொடர்பு கொள்ளுங்கள்",
 
     // resume section

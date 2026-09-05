@@ -1,6 +1,5 @@
 import React from "react";
 import DownloadButton from "../components/DownloadButton.jsx";
-import TypedHeader from "../components/TypedHeader.jsx";
 import ImageBox from "../components/ImageBox.jsx";
 import "../css/Header.css";
 
@@ -21,9 +20,17 @@ const Header = () => {
         <div className="header-content" data-aos="fade-right" data-aos-duration="900">
           <h3 className="title-1 animate-slide-down">{t.headerGreeting}</h3>
           <h1 className="title-name animate-slide-up">{t.headerName}</h1>
-          <span className="title-role">
-            <TypedHeader />
-          </span>
+          <h3 className="title-ceo animate-fade-in">
+            {t.headerCeo}{" "}
+            <a
+              href="https://knowledgetointelligence.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ceo-link"
+            >
+              {t.headerCompany}
+            </a>
+          </h3>
           <p className="title-description animate-fade-in">
             {t.headerDescription}
           </p>

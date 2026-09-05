@@ -13,7 +13,7 @@
 
 .title-1 {
     font-size: 1.6rem;
-    color: #fff;
+    color: var(--text-primary);
     font-weight: 800;
     line-height: 1.9;
 }
@@ -24,19 +24,43 @@
 
 .title-name {
     font-size: 3rem;
-    color: #fff;
+    color: var(--text-primary);
     line-height: 1;
     font-weight: 900;
-    line-height: 1;
+}
+
+.title-ceo {
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    font-weight: 700;
+    line-height: 1.6;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.ceo-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 800;
+    position: relative;
+    transition: color 0.3s ease, text-shadow 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.ceo-link:hover {
+    color: var(--accent-hover);
+    text-shadow: 0 0 12px var(--accent-glow);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .title-description {
-    color: #fff;
+    color: var(--text-secondary);
     font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: .8px;
+    line-height: 1.6;
+    letter-spacing: .5px;
     margin-bottom: 20px;
     font-family: "Oswald", sans-serif;
+    text-align: justify;
 }
 
 .header-links {
@@ -61,8 +85,8 @@
     width: 38px;
     height: 38px;
     background-color: transparent;
-    color: #32cd32;
-    border: 2px solid #32cd32;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -75,8 +99,8 @@
 }
 
 .header-social-links a:hover {
-    color: #171f2b;
-    background-color: #32cd32;
+    color: #ffffff;
+    background-color: var(--accent-color);
 }
 
 .header-social-links a .social-icon {
@@ -188,7 +212,7 @@
 
 .title-name {
   animation: fadeInUp 0.8s ease-out 0.15s both;
-  background: linear-gradient(90deg, #fff 30%, #32cd32 50%, #fff 70%);
+  background: linear-gradient(90deg, var(--text-primary) 30%, var(--accent-color) 50%, var(--text-primary) 70%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;

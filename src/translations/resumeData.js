@@ -17,10 +17,10 @@ import { FaGitAlt } from "react-icons/fa";
 export const experienceData = [
   {
     year: "2026 - Present",
-    role: "Chief Technology Officer (CTO)",
+    role: "Chief Executive Officer (CEO)",
     place: "KnowledgeToIntelligence",
     description:
-      "Chief Technology Officer and developed a knowledge-sharing platform, building scalable web applications, managing backend systems, and enhancing overall user experience.",
+      "Chief Executive Officer and developed a knowledge-sharing platform, building scalable web applications, managing backend systems, and enhancing overall user experience.",
   },
   {
     year: "12/2025 - 03/2026",

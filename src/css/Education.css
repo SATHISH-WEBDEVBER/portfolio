@@ -6,13 +6,14 @@
 }
 
 .education-item {
-  background: #2a3240;
-  border-left: 5px double #32cd32;
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  border-left: 5px double var(--accent-color);
   transition: 0.3s ease-in-out;
   border-radius: 0.8rem;
   padding: 2rem;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--card-shadow);
 }
 
 .education-item::before {
@@ -22,33 +23,33 @@
   right: 0;
   width: 0;
   height: 0;
-  border-top: 60px solid #32cd32;
+  border-top: 60px solid var(--accent-color);
   border-left: 60px solid transparent;
   border-start-end-radius: 0.8rem;
 }
 
 .education-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 24px var(--accent-glow);
 }
 
 .education-item h4 {
   font-size: 1.5rem;
   margin: 0.8rem 0;
-  color: #fff;
+  color: var(--text-heading);
 }
 
 .education-item h4:nth-child(1) {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #32cd32;
+  color: var(--accent-color);
 }
 
 .education-item h4:nth-child(3) {
   font-size: 0.9rem;
   margin-left: 2rem;
   position: relative;
-  color: #e6e5e5;
+  color: var(--text-secondary);
 }
 
 .education-item h4:nth-child(3)::before {
@@ -59,16 +60,17 @@
   transform: translateY(-50%);
   width: 10px;
   height: 10px;
-  background: #32cd32;
+  background: var(--accent-color);
   border-radius: 50%;
 }
 
 .education-item p {
   font-size: 1rem;
   margin-top: 1rem;
-  line-height: 1.5;
-  color: #e6e5e5;
+  line-height: 1.6;
+  color: var(--text-secondary);
   word-spacing: 1.2px;
+  text-align: justify;
 }
 
 

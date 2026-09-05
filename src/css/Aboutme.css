@@ -19,15 +19,15 @@
     width: 25rem; 
     height: 25rem;
     border-radius: 50%;
-    border: 4px solid #32cd32;
+    border: 4px solid var(--accent-color);
     background-color: transparent;
-    box-shadow: 0 0 1.5rem rgba(50, 205, 50, 0.8), 0 0 3rem rgba(50, 205, 50, 0.4);
+    box-shadow: 0 0 1.5rem var(--accent-glow);
     transition: 0.3s ease;
     object-fit: cover;
 }
 
 .mainimage:hover {
-    box-shadow: 0 0 2rem #32cd32, 0 0 5rem #32cd32;
+    box-shadow: 0 0 2rem var(--accent-color), 0 0 5rem var(--accent-glow);
 }
 
 /* Content Container matching the Header-content spacing */
@@ -41,14 +41,14 @@
 
 .aboutcontent h1 {
     font-size: 3rem;
-    color: #fff;
+    color: var(--text-primary);
     font-weight: 900;
     line-height: 1;
     margin: 0 0 0.5rem 0;
 }
 
 .aboutcontent h3 {
-    color: #32cd32;
+    color: var(--accent-color);
     font-size: 1.6rem;
     font-weight: 800;
     line-height: 1.9;
@@ -56,35 +56,36 @@
 }
 
 .aboutcontent p {
-    color: #fff;
+    color: var(--text-secondary);
     font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 0.8px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
     margin-bottom: 20px;
     font-family: "Oswald", sans-serif; /* Matched to Header paragraph */
+    text-align: justify;
 }
 
 /* Button Styling */
 .aboutbutton {
     font-size: 1.1rem;
     font-weight: 600;
-    background-color: #32cd32;
-    color: #171f2b; /* Dark text on green background */
+    background-color: var(--accent-color);
+    color: #ffffff;
     padding: 14px 30px;
     border-radius: 30px;
     cursor: pointer;
     margin-top: 10px;
     border: none;
-    box-shadow: 0 0 1rem rgba(50, 205, 50, 0.4);
+    box-shadow: 0 0 1rem var(--accent-glow);
     transition: 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
 .aboutbutton:hover {
-    box-shadow: none;
-    transform: translateY(-3px);
+    background-color: var(--accent-hover);
+    box-shadow: 0 0 2rem var(--accent-glow);
 }
 
 .abouticon {
@@ -154,11 +155,11 @@
 
 .mainimage:hover {
   transform: scale(1.04);
-  box-shadow: 0 0 3rem #32cd32, 0 0 6rem rgba(50, 205, 50, 0.5);
+  box-shadow: 0 0 3rem var(--accent-color), 0 0 6rem var(--accent-glow);
 }
 
 .aboutcontent h1 {
-  background: linear-gradient(90deg, #fff 30%, #32cd32 50%, #fff 70%);
+  background: linear-gradient(90deg, var(--text-primary) 30%, var(--accent-color) 50%, var(--text-primary) 70%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -167,7 +168,7 @@
 }
 
 .aboutcontent h3 {
-  animation: glowPulse 3s ease-in-out infinite;
+  color: var(--accent-color);
 }
 
 .aboutbutton {
@@ -176,5 +177,5 @@
 
 .aboutbutton:hover {
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 6px 25px rgba(50, 205, 50, 0.6);
+  box-shadow: 0 6px 25px var(--accent-glow);
 }

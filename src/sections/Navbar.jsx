@@ -1,12 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useTheme } from "../contexts/ThemeContext";
 import { translations } from "../translations/translations";
 import "../css/Navbar.css";
 import logo from "../../public/logo.png";
 import { IoReorderThreeOutline, IoClose } from "react-icons/io5";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const Navbar = () => {
   const { language, toggleLanguage } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const t = translations[language];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -197,11 +200,20 @@ const Navbar = () => {
               {t.contact}
             </a>
           </li>
-          {/* <li className="lang-toggle" onClick={toggleLanguage}>
-            <span className="lang-btn">
-              {language === "en" ? "தமிழ்" : "English"}
-            </span>
-          </li> */}
+          <li className="theme-toggle-li">
+            <button
+              className="theme-toggle-btn"
+              onClick={toggleTheme}
+              title={theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
+              aria-label="Toggle Theme"
+            >
+              {theme === "dark" ? (
+                <FaSun className="theme-icon sun" />
+              ) : (
+                <FaMoon className="theme-icon moon" />
+              )}
+            </button>
+          </li>
         </ul>
       </nav>
     </div>

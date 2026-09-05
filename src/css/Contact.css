@@ -1,23 +1,25 @@
 /* Background and layout */
 .contact-section {
-  background-color: #0f1724;
-  color: white;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   padding: 4rem 2rem;
   text-align: center;
   min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Titles */
 .contact-title {
   font-size: 3rem;
   font-weight: 800;
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
 }
 
 .contact-subtitle {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #32cd32;
+  color: var(--accent-color);
   margin-bottom: 2.5rem;
 }
 
@@ -37,14 +39,22 @@
 input,
 textarea {
   flex: 1;
-  background-color: #2a2f38;
-  color: white;
+  background-color: var(--input-bg);
+  color: var(--input-text);
   padding: 1rem;
   font-size: 1rem;
-  border: none;
+  border: 1px solid var(--input-border);
   border-radius: 0.5rem;
   width: 100%;
   resize: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 8px var(--accent-glow);
 }
 
 textarea {
@@ -53,21 +63,22 @@ textarea {
 
 /* Button styling */
 .send-button {
-  background-color: #32cd32;
-  color: #000;
+  background-color: var(--accent-color);
+  color: #ffffff;
   font-weight: 600;
   font-size: 1rem;
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
-  box-shadow: 0 0 15px #32cd32;
+  box-shadow: 0 0 15px var(--accent-glow);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .send-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px #32cd32;
+  background-color: var(--accent-hover);
+  box-shadow: 0 0 25px var(--accent-glow);
 }
 
 .Toastify__toast--success {

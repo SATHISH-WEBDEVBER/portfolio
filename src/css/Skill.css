@@ -5,7 +5,7 @@
 }
 
 .skills-item {
-  background: #2d3542;
+  background: var(--bg-card);
   border-radius: 1rem;
   padding: 1.5rem 1rem;
   text-align: center;
@@ -14,32 +14,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid transparent;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
 }
 
 .skills-item:hover {
   transform: scale(1.05);
-  background-color: #1f1f2e;
-  border-color: #32cd32;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .skills-item .item-icons {
   font-size: 4.5rem;
-  color: white;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   transition: 0.3s;
 }
 
 .skills-item:hover .item-icons {
-  color: #32cd32;
+  color: var(--accent-color);
 }
 
 .skills-item p {
   margin: 0;
   font-size: 1.4rem;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 /* ===== SKILL CARD ANIMATIONS ===== */

@@ -4,8 +4,8 @@
   justify-content: center;
   gap: 5px;
   padding: 10px 20px;
-  background-color: #32cd32;
-  color: #171f2b;
+  background-color: var(--accent-color);
+  color: #ffffff;
   border-radius: 50px;
   font-weight: 600;
   font-size: 1.1rem;
@@ -13,7 +13,7 @@
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
-  box-shadow: 0 0 1rem #32cd32;
+  box-shadow: 0 0 1rem var(--accent-glow);
   margin-right: 10px;
   position: relative;
   overflow: hidden;

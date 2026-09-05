@@ -61,7 +61,8 @@
 }
 
 .tech {
-    color: green;
+    color: var(--accent-color);
+    font-weight: 600;
     margin-bottom: 0px;
 }
 
@@ -80,16 +81,17 @@
   transition: transform 0.3s ease;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #fff;
-  color: green;
+  background-color: var(--bg-card);
+  color: var(--accent-color);
+  border: 1px solid var(--card-border);
   border-radius: 50%;
   text-decoration: none;        
 }
 
 .icon-link:hover {
     transform: scale(1.2);
-    background-color: green;
-    color: #fff;
+    background-color: var(--accent-color);
+    color: #ffffff;
 }
 
 .line {
