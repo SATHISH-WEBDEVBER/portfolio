@@ -129,16 +129,8 @@ const Navbar = () => {
           </h1>
         </div>
       </a>
-      {/* Toggle Icon */}
-      <div className="menu-icon" onClick={toggleMenu}>
-        {isMenuOpen ? (
-          <IoClose size={30} />
-        ) : (
-          <IoReorderThreeOutline size={30} />
-        )}
-      </div>
 
-      {/* Sliding Navbar */}
+      {/* Sliding Navbar Menu */}
       <nav className={`navbar-menu ${isMenuOpen ? "open" : ""}`}>
         <ul
           className={`navbar-list ${
@@ -200,22 +192,33 @@ const Navbar = () => {
               {t.contact}
             </a>
           </li>
-          <li className="theme-toggle-li">
-            <button
-              className="theme-toggle-btn"
-              onClick={toggleTheme}
-              title={theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
-              aria-label="Toggle Theme"
-            >
-              {theme === "dark" ? (
-                <FaSun className="theme-icon sun" />
-              ) : (
-                <FaMoon className="theme-icon moon" />
-              )}
-            </button>
-          </li>
         </ul>
       </nav>
+
+      {/* Right Navbar Controls (Theme Toggle + Mobile Menu Icon) */}
+      <div className="navbar-controls">
+        <button
+          className="theme-toggle-btn"
+          onClick={toggleTheme}
+          title={theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          aria-label="Toggle Theme"
+        >
+          {theme === "dark" ? (
+            <FaSun className="theme-icon sun" />
+          ) : (
+            <FaMoon className="theme-icon moon" />
+          )}
+        </button>
+
+        {/* Toggle Icon */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          {isMenuOpen ? (
+            <IoClose size={30} />
+          ) : (
+            <IoReorderThreeOutline size={30} />
+          )}
+        </div>
+      </div>
     </div>
   );
 };
